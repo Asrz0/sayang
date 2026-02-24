@@ -24,19 +24,18 @@
             border-radius: 20px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             z-index: 2;
-            width: 80%;
+            width: 85%;
             max-width: 320px;
         }
 
-        /* Bingkai Foto Bentuk Hati Sempurna */
+        /* Bingkai Hati yang Diperbaiki agar Tidak Kepotong */
         .heart-frame {
-            width: 200px;
-            height: 180px;
+            width: 220px; /* Ukuran diperbesar sedikit */
+            height: 200px;
             margin: 0 auto 15px;
             background-color: #e91e63;
-            /* Memotong gambar menjadi bentuk hati */
-            clip-path: div; 
-            clip-path: path('M100 170c-60-50-90-80-90-120 0-35 25-60 60-60 20 0 38 12 48 30 10-18 28-30 48-30 35 0 60 25 60 60 0 40-30 70-90 120z');
+            /* Jalur potong bentuk hati yang lebih presisi */
+            clip-path: path('M110 190c-50-45-100-85-100-130 0-35 25-60 60-60 20 0 35 10 40 25 5-15 20-25 40-25 35 0 60 25 60 60 0 45-50 85-100 130z');
             display: flex;
             justify-content: center;
             align-items: center;
@@ -45,7 +44,8 @@
         .heart-frame img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Agar foto tidak gepeng */
+            object-fit: cover;
+            /* Jika wajah masih kepotong, ganti 'cover' jadi 'contain' */
         }
 
         h1 {
