@@ -19,23 +19,24 @@
 
         .container {
             text-align: center;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
             border-radius: 20px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
             z-index: 2;
-            width: 85%;
-            max-width: 350px;
+            width: 80%;
+            max-width: 320px;
         }
 
-        /* Bingkai Foto Bentuk Love */
+        /* Bingkai Foto Bentuk Hati Sempurna */
         .heart-frame {
-            width: 150px;
-            height: 150px;
-            margin: 0 auto 20px;
+            width: 200px;
+            height: 180px;
+            margin: 0 auto 15px;
             background-color: #e91e63;
-            /* Memotong gambar jadi bentuk hati */
-            clip-path: path('M75 145c-45-38-65-58-65-90 0-25 18-43 43-43 15 0 28 8 35 21 7-13 21-21 35-21 25 0 43 18 43 43 0 32-20 52-65 90z');
+            /* Memotong gambar menjadi bentuk hati */
+            clip-path: div; 
+            clip-path: path('M100 170c-60-50-90-80-90-120 0-35 25-60 60-60 20 0 38 12 48 30 10-18 28-30 48-30 35 0 60 25 60 60 0 40-30 70-90 120z');
             display: flex;
             justify-content: center;
             align-items: center;
@@ -44,19 +45,19 @@
         .heart-frame img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: cover; /* Agar foto tidak gepeng */
         }
 
         h1 {
             color: #d81b60;
-            font-size: 1.3rem;
-            margin-bottom: 15px;
+            font-size: 1.2rem;
+            margin: 10px 0;
             line-height: 1.4;
         }
 
         .heart-main {
             color: #e91e63;
-            font-size: 40px;
+            font-size: 35px;
             animation: beat 0.8s infinite alternate;
         }
 
@@ -82,7 +83,7 @@
 
     <div class="container">
         <div class="heart-frame">
-            <img src="foto.jpg" alt="Foto Sayang">
+            <img src="FOTO.JPG" alt="Foto Kita">
         </div>
         
         <div class="heart-main">❤️</div>
